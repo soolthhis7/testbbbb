@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>З Днем Народження, Діано!</title>
+  <link rel="stylesheet" href="auguri.css">
+</head>
+<body>
+
+  <div class="card-scene" id="cardScene">
+    <div class="card" id="birthdayCard">
+      
+      <!-- РУХОМА ОБКЛАДИНКА -->
+      <div class="card-cover" id="cardCover">
+        
+        <!-- ЛИЦЕВА ОБКЛАДИНКА -->
+        <div class="cover-front">
+          <div>
+            <div class="cover-subtitle">Спеціально для тебе</div>
+            <h1 class="cover-title">З Днем<br>Народження!</h1>
+          </div>
+          <div class="click-hint">Торкніться, щоб відкрити</div>
+        </div>
+
+        <!-- ЗВОРОТ ОБКЛАДИНКИ (Ліва сторона — Фото) -->
+        <div class="cover-back">
+          <div class="photo-page active" id="photoPage1">
+            <div class="photo-container">
+              <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000&auto=format&fit=crop" alt="Diana Photo 1">
+            </div>
+          </div>
+
+          <div class="photo-page" id="photoPage2">
+            <div class="photo-container">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1000&auto=format&fit=crop" alt="Diana Photo 2">
+            </div>
+          </div>
+
+          <div class="photo-page" id="photoPage3">
+            <div class="photo-container">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1000&auto=format&fit=crop" alt="Diana Photo 3">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ОСНОВА (Права сторона з текстом) -->
+      <div class="card-base">
+        
+        <div class="text-page active" id="textPage1">
+          <h2 class="greeting-title">Дорога Діано! ✨</h2>
+          <div class="greeting-text">
+            <p>Вітаю тебе з днем народження!</p>
+            <p>Бажаю тобі безмежного щастя, щирих посмішок, здійснення найзаповітніших мрій та гармонії у кожному дні.</p>
+            <p>Залишайся завжди такою ж світлою, чарівною та неймовірною людиною!</p>
+          </div>
+        </div>
+
+        <div class="text-page" id="textPage2">
+          <h2 class="greeting-title">Ще декілька слів... 🌹</h2>
+          <div class="greeting-text">
+            <p>Нехай кожен новий день дарує натхнення для нових звершень, а поруч завжди будуть вірні та цінні люди.</p>
+            <p>Дякую за твою теплоту, підтримку та за всі яскраві моменти, які ми розділяємо разом.</p>
+          </div>
+        </div>
+
+        <div class="text-page" id="textPage3">
+          <h2 class="greeting-title">Від щирого серця ✨</h2>
+          <div class="greeting-text">
+            <p>Нехай усе задумане реалізується з легкістю, а життя буде сповнене приємних сюрпризів, подорожей та незабутніх емоцій!</p>
+            <div class="signature">— З любов'ю та найкращими побажаннями ❤️</div>
+          </div>
+        </div>
+
+        <!-- Навігація з кнопкою закриття -->
+        <div class="pagination" id="paginationControls" style="display: none;">
+          <div class="nav-controls">
+            <button class="nav-btn" id="prevBtn" disabled>← Назад</button>
+            <span class="page-indicator" id="pageIndicator">1 / 3</span>
+            <button class="nav-btn" id="nextBtn">Далі →</button>
+          </div>
+          <button class="close-btn" id="closeBtn">Закрити ✖</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="auguri.js"></script>
+</body>
+</html>
